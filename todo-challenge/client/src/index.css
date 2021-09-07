@@ -1,0 +1,64 @@
+:root {
+	--light: #ffe600;
+	--light-alt: rgb(202, 202, 202);
+	--dark: rgb(255, 1, 1);
+	--dark-alt: rgb(15, 0, 68);
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+
+	font-family: "Fira Sans", sans-serif;
+}
+
+body {
+	background-color: var(--dark-alt);
+	color: var(--light);
+}
+
+.App {
+	padding: 32px;
+}
+
+h1 {
+	font-size: 40px;
+	font-weight: 700;
+	margin-bottom: 32px;
+}
+
+h4 {
+	font-size: 18px;
+	color: var(--light-alt);
+	text-transform: uppercase;
+	font-weight: 400;
+	margin-bottom: 16px;
+}
+
+.todo {
+	background-color: var(--dark);
+	padding: 16px;
+	border-radius: 16px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 16px;
+}
+
+.todo.is-complete .checkbox {
+	background-color: var(--primary);
+	background-image: linear-gradient(to bottom, var(--primary), var(--secondary));
+}
+
+.todo .todo-text {
+	font-size: 25px;
+	margin-right: auto;
+	margin-left: 5%
+}
+
+.todo.is-complete .todo-text {
+	text-decoration: line-through;
+	color: black
+}
+
